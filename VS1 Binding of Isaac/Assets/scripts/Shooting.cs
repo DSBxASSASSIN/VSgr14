@@ -11,7 +11,7 @@ public class Shooting : MonoBehaviour
     public float bulletForce = 20f;
 
     void Update(){
-        if (Input.GetButtonDown("Fire1")) {
+        if (Input.GetKeyDown(KeyCode.UpArrow)) {
             Shoot();
         }
     }

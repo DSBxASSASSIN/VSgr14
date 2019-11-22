@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4759786709692610866}
   - component: {fileID: 129696784109740919}
   - component: {fileID: 650300758411577556}
+  - component: {fileID: 1057905890298337642}
   m_Layer: 0
   m_Name: Player tear
   m_TagString: Untagged
@@ -118,3 +119,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.17895287
+--- !u!114 &1057905890298337642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645671986000960050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ddb0d3f34e2504d90d0f427ba00ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitEffect: {fileID: 0}
