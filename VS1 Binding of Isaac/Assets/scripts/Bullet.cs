@@ -7,13 +7,15 @@ public class Bullet : MonoBehaviour {
 
 
     void Start() {
-        Destroy(gameObject, 2f);
+        Destroy(gameObject, 1f);
     }
 
-    void OnCollisionEnter2D(Collision2D collision) {
-        GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-        Destroy(effect, .2f);
-        Destroy(gameObject);
+    void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.transform.tag != Constants.Tags.PLAYER && collision.transform.tag != Constants.Tags.TEAR) {
+            GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            Destroy(effect, .2f);
+            Destroy(gameObject);
+        }
     }
 
     void DestroyObjectDelayed() {
