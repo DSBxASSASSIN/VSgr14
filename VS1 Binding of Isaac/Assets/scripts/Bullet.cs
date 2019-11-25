@@ -7,11 +7,11 @@ public class Bullet : MonoBehaviour
     public GameObject hitEffect;
 
     void Start() {
-        Destroy(gameObject, 2f);
+        Destroy(gameObject, 1f);
     }
 
-    void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.transform.tag != Constants.PLAYER) {
+    void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.transform.tag != Constants.Tags.PLAYER  && collision.transform.tag != Constants.Tags.TEAR) {
             GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(effect, .2f);
             Destroy(gameObject);
