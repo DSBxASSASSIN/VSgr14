@@ -9,8 +9,8 @@ public class PlayerMovement : MonoBehaviour
     Vector2 movement;
 
     void Update() {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        movement.x = Input.GetAxisRaw(Constants.HORIZON);
+        movement.y = Input.GetAxisRaw(Constants.VERTICAL);
     }
 
     void FixedUpdate() {
