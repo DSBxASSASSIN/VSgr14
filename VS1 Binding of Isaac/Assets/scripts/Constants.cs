@@ -13,5 +13,9 @@ public class Constants
         public const string HORIZON = "Horizontal";
         public const string VERTICAL = "Vertical";
     }
+
+    public class Player{
+        public const float SPEED = 5f;
+    }
     
 }
