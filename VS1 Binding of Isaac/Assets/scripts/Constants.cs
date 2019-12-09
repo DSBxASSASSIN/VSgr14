@@ -7,6 +7,7 @@ public class Constants
     public class Tags {
         public const string PLAYER = "Player";
         public const string TEAR = "Tear";
+        public const string ENEMY = "Enemy";
     }
     
     public class Input {
