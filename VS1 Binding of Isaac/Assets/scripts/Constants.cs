@@ -19,4 +19,7 @@ public class Constants
         public const float SPEED = 5f;
     }
     
+    public class Color{
+        
+    }
 }

@@ -42,9 +42,9 @@ GameObject:
   - component: {fileID: 2052920519126238824}
   - component: {fileID: 2052920519126238830}
   - component: {fileID: 2052920519126238829}
-  - component: {fileID: 2052920519126238738}
   - component: {fileID: 2052920519126238739}
   - component: {fileID: 2052920519126238828}
+  - component: {fileID: 445218010}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -150,19 +150,6 @@ MonoBehaviour:
   bulletPrefab: {fileID: 645671986000960050, guid: 7735a3a220f0c2d40b493e3a538d9b09,
     type: 3}
   bulletForce: 20
---- !u!114 &2052920519126238738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2052920519126238825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3991ca1dd242a6d43be4ed6ea092f75c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 2052920519126238828}
 --- !u!61 &2052920519126238739
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -176,7 +163,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.009798169}
+  m_Offset: {x: 0.0033399165, y: -0.014808178}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -187,7 +174,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.66529524, y: 0.81236565}
+  m_Size: {x: 0.58513683, y: 0.7288674}
   m_EdgeRadius: 0
 --- !u!50 &2052920519126238828
 Rigidbody2D:
@@ -210,3 +197,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &445218010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052920519126238825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc06d1c035c72b642b94ed59ada776dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 2052920519126238828}

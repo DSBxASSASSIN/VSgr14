@@ -9,12 +9,11 @@ public class EnemyScript : MonoBehaviour
     
 
     private void OnTriggerEnter2D(Collider2D collision){
-        
         if(collision.CompareTag(Constants.Tags.TEAR)){
             Destroy(collision.gameObject);
 
             health--;
-            transform.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+            transform.gameObject.GetComponent<SpriteRenderer>().color =  new Color(0.509f, 0.0f, 0.0f, 1.0f);
 
             
             if(health <= 0){
