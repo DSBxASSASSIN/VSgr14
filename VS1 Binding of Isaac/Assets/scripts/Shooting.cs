@@ -8,8 +8,8 @@ public class Shooting : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
     
-    public float fireRate = 3f;
-    public float bulletForce = 10f;
+    public float fireRate = 5f;
+    public float bulletForce = 7f;
     private float nextTimeToFire = 0f;
     void Update(){
         if (Input.GetKeyDown(KeyCode.UpArrow) && Time.time >= nextTimeToFire){

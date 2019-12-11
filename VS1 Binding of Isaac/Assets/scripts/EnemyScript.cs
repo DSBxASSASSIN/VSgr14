@@ -6,8 +6,11 @@ public class EnemyScript : MonoBehaviour
 {
     private int health = 5;
     SpriteRenderer sr;
+    public GameObject DeathEffect;
     
-
+    void Update(){
+        Move();
+    }
     private void OnTriggerEnter2D(Collider2D collision){
         if(collision.CompareTag(Constants.Tags.TEAR)){
             Destroy(collision.gameObject);
@@ -30,6 +33,12 @@ public class EnemyScript : MonoBehaviour
     }
 
     private void killSelf(){
+        GameObject effect = Instantiate(DeathEffect, transform.position, Quaternion.identity);
+        Destroy(effect, .2f);
         Destroy(gameObject);
+    }
+
+    void Move(){
+        
     }
 }
