@@ -5,8 +5,6 @@ using UnityEngine;
 public class EnemyScript : MonoBehaviour
 {
     private int health = 5;
-    private Material MatRed;
-    private Material MatDefault;
     SpriteRenderer sr;
     
 
