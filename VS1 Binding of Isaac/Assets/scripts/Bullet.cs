@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Bullet : MonoBehaviour {
     public GameObject hitEffect;
@@ -13,8 +11,8 @@ public class Bullet : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.transform.tag != Constants.Tags.PLAYER && collision.transform.tag != Constants.Tags.TEAR) {
             GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-            Destroy(effect);
-            Destroy(gameObject, 6f);
+            Destroy(effect, .2f);
+            Destroy(gameObject);
         }
     }
 

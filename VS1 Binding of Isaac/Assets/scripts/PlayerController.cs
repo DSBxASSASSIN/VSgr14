@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
@@ -44,7 +42,20 @@ public class PlayerController : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision){
-        if(collision.CompareTag(Constants.Tags.ENEMY)){
+        if(collision.CompareTag(Constants.Tags.ENEMYTEAR)){
+            _health -= .5f;
+            transform.gameObject.GetComponent<SpriteRenderer>().color = new Color(0.509f, 0.0f, 0.0f, 1.0f);
+
+            if(_health <= 0){
+                Destroy(gameObject);
+            }else{
+                Invoke("resetMaterial", .2f);
+            }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D col){
+        if(col.gameObject.CompareTag(Constants.Tags.ENEMY)){
             _health -= .5f;
             transform.gameObject.GetComponent<SpriteRenderer>().color = new Color(0.509f, 0.0f, 0.0f, 1.0f);
 

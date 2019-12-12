@@ -1,25 +1,39 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemyShooting : MonoBehaviour
 {
-    
+    private Transform player;
     public Transform firePoint;
-
+    private Vector2 lastPos;
+    private Vector2 curPos;
+    private Vector2 playerPos;
     public GameObject bulletPrefab;
+    public float bulletForce = 7f;
+    private float nextTimeToFire = 0f;
+    public float fireRate = 5f;
 
-    public float bulletForce = 10f;
     
-    public float countDown = 5f;
-
-    // Update is called once per frame
+    void Start(){
+        player = GameObject.FindWithTag(Constants.Tags.PLAYER).transform;
+    }
     void Update()
     {
-        
+        if(Time.time >= nextTimeToFire){
+            nextTimeToFire = Time.time + 1f/fireRate;
+            Shoot();
+        }
     }
 
-    void shootPlayer(Transform player){
-
+    void Shoot(){
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        curPos = transform.position;
+        transform.position = Vector2.MoveTowards(transform.position, playerPos, bulletForce * Time.deltaTime);
+        if(curPos == lastPos){
+            Destroy(gameObject);
+        }
+        lastPos = curPos;
+      
     }
+
 }
