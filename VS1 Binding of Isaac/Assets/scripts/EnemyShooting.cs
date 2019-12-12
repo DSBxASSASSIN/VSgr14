@@ -14,10 +14,14 @@ public class EnemyShooting : MonoBehaviour
 
     
     void Start(){
-        player = GameObject.FindWithTag(Constants.Tags.PLAYER).transform;
+       
     }
     void Update()
     {
+        if(GameObject.FindWithTag(Constants.Tags.PLAYER) != null){
+            playerPos = GameObject.FindWithTag(Constants.Tags.PLAYER).transform.position;
+        }
+
         if(Time.time >= nextTimeToFire){
             nextTimeToFire = Time.time + 1f/fireRate;
             Shoot();
@@ -26,6 +30,7 @@ public class EnemyShooting : MonoBehaviour
 
     void Shoot(){
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+        bullet.GetComponent<Bullet>().Isenemy = true;
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         curPos = transform.position;
         transform.position = Vector2.MoveTowards(transform.position, playerPos, bulletForce * Time.deltaTime);
@@ -33,7 +38,6 @@ public class EnemyShooting : MonoBehaviour
             Destroy(gameObject);
         }
         lastPos = curPos;
-      
     }
 
 }

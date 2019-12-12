@@ -18,13 +18,38 @@ public class EnemyController : MonoBehaviour
     private bool chooseDir = false;
     private bool dead = false;
     private Vector3 randomDir;
+    private Animator animator;
     
     void Start(){
         player = GameObject.FindGameObjectWithTag(Constants.Tags.PLAYER);
         rb = transform.GetComponent<Rigidbody2D>();
+        animator = transform.GetComponent<Animator>();
     }
     
     void Update(){
+        if(movement.x < 0){
+            animator.SetBool("isMovingLeft", true);
+        }else if(movement.x > 0){
+            animator.SetBool("isMovingRight", true);
+        }
+
+        if(movement.y < 0){
+            animator.SetBool("isMovingUpDown", true);
+        }else if(movement.y > 0){
+            animator.SetBool("isMovingUpDown", true);
+        }
+
+        if(movement.x == 0){
+            animator.SetBool("isMovingLeft", false);
+            animator.SetBool("isMovingRight", false);
+        }
+
+        if(movement.y == 0){
+            animator.SetBool("isMovingUpDown", false);
+            animator.SetBool("isMovingUpDown", false);
+        }
+
+
         if(currState != Enemystate.Die){
             currState = Enemystate.Wander;
         }
