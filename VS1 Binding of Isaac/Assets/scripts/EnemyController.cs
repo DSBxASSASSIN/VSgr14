@@ -74,7 +74,7 @@ public class EnemyController : MonoBehaviour
          rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
 
     }
-    private int health = 5;
+    private int health = 3;
     SpriteRenderer sr;
     public GameObject DeathEffect;
 

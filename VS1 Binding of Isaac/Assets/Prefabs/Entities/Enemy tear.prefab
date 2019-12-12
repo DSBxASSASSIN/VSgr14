@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3497778195066289343}
   m_Layer: 0
   m_Name: Enemy tear
-  m_TagString: EnemyTear
+  m_TagString: Undefined
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,3 +136,4 @@ MonoBehaviour:
   EnemyhitEffect: {fileID: 5981147462450185780, guid: 707c530873f275c41b0bf740b3b0c32b,
     type: 3}
   Isenemy: 0
+  bulletForce: 7

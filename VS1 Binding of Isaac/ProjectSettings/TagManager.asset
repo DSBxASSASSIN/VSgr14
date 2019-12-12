@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Tear
   - Enemy
+  - Undefined
+  - EnemyTear
   layers:
   - Default
   - TransparentFX

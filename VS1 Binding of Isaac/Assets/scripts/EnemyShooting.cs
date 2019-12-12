@@ -2,7 +2,7 @@
 
 public class EnemyShooting : MonoBehaviour
 {
-    private Transform player;
+    private float fire;
     public Transform firePoint;
     private Vector2 lastPos;
     private Vector2 curPos;
@@ -22,22 +22,17 @@ public class EnemyShooting : MonoBehaviour
             playerPos = GameObject.FindWithTag(Constants.Tags.PLAYER).transform.position;
         }
 
-        if(Time.time >= nextTimeToFire){
-            nextTimeToFire = Time.time + 1f/fireRate;
-            Shoot();
-        }
+       fire = Random.Range(1f, 100f);
+       if(fire >= 99){
+           Shoot();
+       }
     }
 
     void Shoot(){
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         bullet.GetComponent<Bullet>().Isenemy = true;
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        curPos = transform.position;
-        transform.position = Vector2.MoveTowards(transform.position, playerPos, bulletForce * Time.deltaTime);
-        if(curPos == lastPos){
-            Destroy(gameObject);
-        }
-        lastPos = curPos;
+        
     }
 
 }
