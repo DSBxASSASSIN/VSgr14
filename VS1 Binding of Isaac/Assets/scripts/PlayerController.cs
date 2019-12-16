@@ -4,7 +4,7 @@ public class PlayerController : MonoBehaviour
 {
     public Rigidbody2D rb;
     Vector2 movement;
-    private float _health = 3;
+    [SerializeField]private float _health = 3;
      private Animator animator;
 
     void Start(){
@@ -42,7 +42,8 @@ public class PlayerController : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision){
-        if(collision.CompareTag(Constants.Tags.ENEMYTEAR)){
+        Debug.Log(collision.transform.tag);
+        if(collision.transform.tag == "EnemyTear"){
             _health -= .5f;
             transform.gameObject.GetComponent<SpriteRenderer>().color = new Color(0.509f, 0.0f, 0.0f, 1.0f);
 

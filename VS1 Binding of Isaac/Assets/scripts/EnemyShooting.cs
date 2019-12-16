@@ -23,7 +23,7 @@ public class EnemyShooting : MonoBehaviour
         }
 
        fire = Random.Range(1f, 100f);
-       if(fire >= 99){
+       if(fire >= 99.7){
            Shoot();
        }
     }
