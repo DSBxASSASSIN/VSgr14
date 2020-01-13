@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     void Start(){
       animator = GetComponent<Animator>();   
     }
+    
     void Update() {
         movement.x = Input.GetAxisRaw(Constants.Input.HORIZON);
         movement.y = Input.GetAxisRaw(Constants.Input.VERTICAL);
