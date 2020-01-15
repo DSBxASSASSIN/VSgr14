@@ -5,30 +5,44 @@ using UnityEngine;
 public class Player_Controller : MonoBehaviour
 {    
     private Rigidbody rb;
-    private float distToGround;
-    Vector3 movement;
-    [SerializeField]
-    private int _health = 100;
+    private float disToGround = 1.5f;
+    private int _currentJumpAmmount = 2;
     [SerializeField]
     private float _speed = 8;
-    private float _gravity = 14.0f;
-    private float _verticalVelocity;
-    private float _jumpForce = 10f;
-    private Animator _animator;
+    private int _health = 100;
     private int _maxJumps = 2;
-    private int _jumpsLeft = 2;
-    private Vector3 _moveDirection;
+    private float _jumpforce = 1f;
+    
+ 
 
     private void Start(){
-        _animator = GetComponent<Animator>();     
-        rb = GetComponent<Rigidbody>();   
-        distToGround = Collider.bounds.extents.y;
+       rb = GetComponent<Rigidbody>();
     }
 
-    private void Update(){
+    void FixedUpdate(){
+
+       
+
+        if(Input.GetKey(KeyCode.Space) && _currentJumpAmmount > 0){
+            Vector3 jumpVelocity = new Vector3(0f, _jumpforce, 0f);
+            rb.velocity = rb.velocity += jumpVelocity;
+            _currentJumpAmmount--;
+        }
+
+        if(isGrounded()){
+            _currentJumpAmmount = _maxJumps;
+        }
+
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
+        Vector3 movement = new Vector3(horizontal * _speed * Time.deltaTime, 0, vertical * _speed * Time.deltaTime);
+        rb.MovePosition(transform.position + movement);
 
     }
 
+    bool isGrounded(){
+        return Physics.Raycast(transform.position, Vector3.down, disToGround);
+    }
     public void takeDamage(int damage){
         _health -= damage;
     }
