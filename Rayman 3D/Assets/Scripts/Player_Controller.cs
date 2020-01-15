@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Player_Controller : MonoBehaviour
 {    
-    public CharacterController controller;
+    private Rigidbody rb;
+    private float distToGround;
     Vector3 movement;
     [SerializeField]
     private int _health = 100;
@@ -20,31 +21,11 @@ public class Player_Controller : MonoBehaviour
 
     private void Start(){
         _animator = GetComponent<Animator>();     
-        controller = GetComponent<CharacterController>();   
+        rb = GetComponent<Rigidbody>();   
+        distToGround = Collider.bounds.extents.y;
     }
 
     private void Update(){
-
-        if(controller.isGrounded){
-            _moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
-            _moveDirection *= _speed;
-
-            if(Input.GetButton("Jump")){
-                _moveDirection.y = _jumpForce;
-                _jumpsLeft --;
-            }
-
-        }else{
-
-            if(Input.GetButton("Jump") && _jumpsLeft > 0){
-                _moveDirection.y = _jumpForce;
-                _jumpsLeft --;
-            }
-        }
-
-        _moveDirection.y -= _gravity * Time.deltaTime;
-
-        controller.Move(_moveDirection * Time.deltaTime);
 
     }
 
