@@ -6,12 +6,13 @@ public class Player_Controller : MonoBehaviour
 {    
     private Rigidbody rb;
     private float disToGround = 1.5f;
+    [SerializeField]
     private int _currentJumpAmmount = 2;
     [SerializeField]
     private float _speed = 8;
     private int _health = 100;
     private int _maxJumps = 2;
-    private float _jumpforce = 1f;
+    private float _jumpforce = 8f;
     
  
 
@@ -19,14 +20,18 @@ public class Player_Controller : MonoBehaviour
        rb = GetComponent<Rigidbody>();
     }
 
-    void FixedUpdate(){
-
-       
-
-        if(Input.GetKey(KeyCode.Space) && _currentJumpAmmount > 0){
-            Vector3 jumpVelocity = new Vector3(0f, _jumpforce, 0f);
-            rb.velocity = rb.velocity += jumpVelocity;
-            _currentJumpAmmount--;
+    void Update(){
+        if(Input.GetKeyDown(KeyCode.Space)){
+            if(_currentJumpAmmount > 0){
+                Vector3 jumpVelocity = new Vector3(0f, _jumpforce, 0f);
+                rb.velocity += jumpVelocity;
+                _currentJumpAmmount--;
+            }else if(!isGrounded() && _currentJumpAmmount > 0){
+                 Vector3 jumpVelocity = new Vector3(0f, _jumpforce, 0f);
+                rb.velocity = Vector3.zero;
+                rb.velocity += jumpVelocity;
+                _currentJumpAmmount--;    
+            }
         }
 
         if(isGrounded()){
