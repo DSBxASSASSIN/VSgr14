@@ -1,25 +1,52 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Bullet : MonoBehaviour {
     public GameObject hitEffect;
+    public GameObject EnemyhitEffect;
+    public bool Isenemy;
 
+    private Vector2 lastPos;
+    private Vector2 curPos;
+    private Vector2 playerPos;
+
+    public float bulletForce = 7f;
 
     void Start() {
         Destroy(gameObject, 1f);
     }
 
-    void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.transform.tag != Constants.Tags.PLAYER && collision.transform.tag != Constants.Tags.TEAR) {
-            GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-            Destroy(effect, .2f);
-            Destroy(gameObject);
+    void Update(){
+        if(Isenemy){
+            if(GameObject.FindWithTag(Constants.Tags.PLAYER) != null){
+                playerPos = GameObject.FindWithTag(Constants.Tags.PLAYER).transform.position;
+            }
+
+            curPos = transform.position;
+            transform.position = Vector2.MoveTowards(transform.position, playerPos, bulletForce * Time.deltaTime);
+            if(curPos == lastPos){
+                Destroy(gameObject);
+            }
+            lastPos = curPos;
         }
     }
 
-    void DestroyObjectDelayed() {
-        Destroy(gameObject, 5);
+    void OnTriggerEnter2D(Collider2D collision) {
+
+        if(!Isenemy){
+            if (collision.transform.tag != "Player" && collision.transform.tag != "Tear" && collision.transform.tag != "EnemyTear") {
+                GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+                Destroy(effect, .2f);
+                Destroy(gameObject);
+            }
+        }
+
+        if(Isenemy){
+            if(collision.transform.tag != "Enemy" && collision.transform.tag != "EnemyTear" && collision.transform.tag != "Tear"){
+                GameObject Enemyeffect = Instantiate(EnemyhitEffect, transform.position, Quaternion.identity);
+                Destroy(Enemyeffect, .2f);
+                Destroy(gameObject);
+            }
+        }
     }
 
 }  
