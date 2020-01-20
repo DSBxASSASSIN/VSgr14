@@ -296,9 +296,7 @@
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
 Assets\Scripts\Enemy\EnemyController.cs
-"Assets\Scripts\menu's\Level_Loader.cs"
 "Assets\Scripts\menu's\LevelLoader.cs"
-"Assets\Scripts\menu's\Main_Menu.cs"
 "Assets\Scripts\menu's\MainMenu.cs"
 "Assets\Scripts\menu's\Pause_Menu.cs"
 "Assets\Scripts\menu's\PauseMenu.cs"
