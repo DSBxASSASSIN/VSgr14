@@ -11,7 +11,7 @@ public class Player_Controller : MonoBehaviour
     [SerializeField]
     private float _speed = 8;
     private int _health = 100;
-    private int _maxJumps = 2;
+    private int _maxJumps = 1;
     private float _jumpforce = 8f;
     
  
@@ -22,7 +22,7 @@ public class Player_Controller : MonoBehaviour
 
     void Update(){
         if(Input.GetKeyDown(KeyCode.Space)){
-            if(_currentJumpAmmount > 0){
+            if(isGrounded() &&_currentJumpAmmount > 0){
                 Vector3 jumpVelocity = new Vector3(0f, _jumpforce, 0f);
                 rb.velocity += jumpVelocity;
                 _currentJumpAmmount--;
