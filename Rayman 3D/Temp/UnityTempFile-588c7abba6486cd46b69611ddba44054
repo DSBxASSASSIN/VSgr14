@@ -1,6 +1,6 @@
 /target:library
 /nowarn:0169
-/out:Temp/Assembly-CSharp.dll
+/out:Temp/Unity.TextMeshPro.dll
 /debug:portable
 /optimize-
 /nostdlib+
@@ -66,18 +66,20 @@
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/Managed/UnityEditor.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/Managed/Unity.Locator.dll"
-/reference:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
-/reference:Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-/reference:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-/reference:Library/ScriptAssemblies/Unity.Timeline.dll
-/reference:Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-/reference:Library/ScriptAssemblies/Unity.TextMeshPro.dll
-/reference:Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll"
+/reference:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
 /reference:Assets/Plugins/DevConsole/CommandSystem/CommandSystem.dll
-/reference:"C:/Users/thijs/Documents/GitHub/VSgr14/Rayman 3D/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll"
-/reference:"C:/Users/thijs/Documents/GitHub/VSgr14/Rayman 3D/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll"
-/reference:"C:/Users/thijs/Documents/GitHub/VSgr14/Rayman 3D/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll"
+/reference:"D:/unity/VSgr14/Rayman 3D/Library/PackageCache/com.unity.ads@2.0.8/UnityEngine.Advertisements.dll"
+/reference:"D:/unity/VSgr14/Rayman 3D/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll"
+/reference:"D:/unity/VSgr14/Rayman 3D/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll"
+/reference:"D:/unity/VSgr14/Rayman 3D/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll"
+/reference:"D:/unity/VSgr14/Rayman 3D/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll"
+/reference:"D:/unity/VSgr14/Rayman 3D/Library/PackageCache/com.unity.purchasing@2.0.6/UnityEngine.Purchasing.dll"
+/reference:"D:/unity/VSgr14/Rayman 3D/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll"
@@ -293,46 +295,62 @@
 /define:ENABLE_UNITY_COLLECTIONS_CHECKS
 /define:ENABLE_BURST_AOT
 /define:UNITY_TEAM_LICENSE
+/define:ENABLE_VSTU
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
-Assets\KillMe.cs
-Assets\Scripts\EnemyController.cs
-Assets\Scripts\Level_Loader.cs
-Assets\Scripts\Main_Menu.cs
-Assets\Scripts\Pause_Menu.cs
-Assets\Scripts\Player_Controller.cs
-Assets\Scripts\Settings_Menu.cs
-Assets\Scripts\Shooting.cs
-"Assets\TextMesh Pro\Examples & Extras\Scripts\Benchmark01.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\Benchmark01_UGUI.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\Benchmark02.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\Benchmark03.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\Benchmark04.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\CameraController.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\ChatController.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\EnvMapAnimator.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\ObjectSpin.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\ShaderPropAnimator.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\SimpleScript.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\SkewTextExample.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\TeleType.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\TextConsoleSimulator.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\TextMeshProFloatingText.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\TextMeshSpawner.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\TMP_DigitValidator.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\TMP_ExampleScript_01.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\TMP_FrameRateCounter.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\TMP_PhoneNumberValidator.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\TMP_TextEventCheck.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\TMP_TextEventHandler.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\TMP_TextInfoDebugTool.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\TMP_TextSelector_A.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\TMP_TextSelector_B.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\TMP_UiFrameRateCounter.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\TMPro_InstructionOverlay.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\VertexColorCycler.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\VertexJitter.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\VertexShakeA.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\VertexShakeB.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\VertexZoom.cs"
-"Assets\TextMesh Pro\Examples & Extras\Scripts\WarpTextExample.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\AssemblyInfo.cs.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\FastAction.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\MaterialReferenceManager.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TextContainer.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TextMeshPro.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TextMeshProUGUI.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_Asset.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_Character.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_CharacterInfo.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_ColorGradient.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_CoroutineTween.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_DefaultControls.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_Dropdown.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_EditorResourceManager.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_FontAsset.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_FontAssetCommon.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_FontAssetUtilities.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_FontFeaturesCommon.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_FontFeatureTable.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_InputField.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_InputValidator.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_LineInfo.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_ListPool.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_MaterialManager.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_MeshInfo.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_ObjectPool.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_PackageResourceImporter.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_RichTextTagsCommon.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_RichTextTagStack.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_ScrollbarEventHandler.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_SelectionCaret.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_Settings.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_ShaderUtilities.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_Sprite.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_SpriteAnimator.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_SpriteAsset.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_SpriteAssetImportFormats.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_SpriteCharacter.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_SpriteGlyph.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_Style.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_StyleSheet.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_SubMesh.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_SubMeshUI.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_Text.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_TextElement.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_TextElement_Legacy.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_TextInfo.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_TextParsingUtilities.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_TextUtilities.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_UpdateManager.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMP_UpdateRegistery.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMPro_EventManager.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMPro_ExtensionMethods.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMPro_MeshUtilities.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMPro_Private.cs"
+"D:\unity\VSgr14\Rayman 3D\Library\PackageCache\com.unity.textmeshpro@2.0.1\Scripts\Runtime\TMPro_UGUI_Private.cs"
