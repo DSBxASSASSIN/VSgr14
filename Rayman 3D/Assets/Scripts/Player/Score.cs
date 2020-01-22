@@ -3,15 +3,19 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour {
 
-    public Transform player;
     public Text fairyScoreText;
     public Text animalScoreText;
- 
+    public int fairiesCaught;
+    public int animalsFreed;
+
+    private void Start()
+    {
+        fairiesCaught = 0;
+        animalsFreed = 0;
+    }
 
     void Update() {
-        // fairyScoreText.text = fairiesCaught.ToString() + "/50";
-        // animalScoreText.text = animalsFreed.ToString() + "/0";
-        fairyScoreText.text = "0/50";
-        animalScoreText.text = "0/0";
+        fairyScoreText.text = fairiesCaught.ToString() + "/5";
+        animalScoreText.text = animalsFreed.ToString() + "/3";
     }
 }
