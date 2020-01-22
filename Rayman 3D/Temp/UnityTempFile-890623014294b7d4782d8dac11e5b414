@@ -1,17 +1,11 @@
 /target:library
 /nowarn:0169
-/out:Temp/Assembly-CSharp-firstpass.dll
+/out:Temp/Assembly-CSharp.dll
 /debug:portable
 /optimize-
 /nostdlib+
 /preferreduilang:en-US
 /langversion:latest
-/reference:Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-/reference:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-/reference:Library/ScriptAssemblies/Unity.Timeline.dll
-/reference:Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-/reference:Library/ScriptAssemblies/Unity.TextMeshPro.dll
-/reference:Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -72,13 +66,18 @@
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/Managed/UnityEditor.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/Managed/Unity.Locator.dll"
+/reference:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+/reference:Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.Timeline.dll
+/reference:Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.TextMeshPro.dll
+/reference:Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
 /reference:Assets/Plugins/DevConsole/CommandSystem/CommandSystem.dll
-/reference:"D:/unity/VSgr14/Rayman 3D/Library/PackageCache/com.unity.ads@2.0.8/UnityEngine.Advertisements.dll"
 /reference:"D:/unity/VSgr14/Rayman 3D/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll"
 /reference:"D:/unity/VSgr14/Rayman 3D/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll"
 /reference:"D:/unity/VSgr14/Rayman 3D/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll"
-/reference:"D:/unity/VSgr14/Rayman 3D/Library/PackageCache/com.unity.purchasing@2.0.6/UnityEngine.Purchasing.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll"
@@ -297,45 +296,47 @@
 /define:ENABLE_VSTU
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
-Assets\Plugins\DevConsole\CommandSystem\CommandSystem-Unity\BuiltInCommandsBuilder.cs
-Assets\Plugins\DevConsole\CommandSystem\CommandSystem-Unity\Parsers.cs
-Assets\Plugins\DevConsole\Scripts\AutoComplete.cs
-Assets\Plugins\DevConsole\Scripts\BuiltInCommandsBuilder.cs
-Assets\Plugins\DevConsole\Scripts\ColorUtils.cs
-Assets\Plugins\DevConsole\Scripts\ConsoleInput.cs
-Assets\Plugins\DevConsole\Scripts\DevConsole.cs
-Assets\Plugins\DevConsole\Scripts\Entry.cs
-Assets\Plugins\DevConsole\Scripts\EntryData.cs
-Assets\Plugins\DevConsole\Scripts\EntryGroup.cs
-Assets\Plugins\DevConsole\Scripts\EntryOptions.cs
-Assets\Plugins\DevConsole\Scripts\EnumFlags.cs
-Assets\Plugins\DevConsole\Scripts\Filter.cs
-Assets\Plugins\DevConsole\Scripts\GUIUtils.cs
-Assets\Plugins\DevConsole\Scripts\History.cs
-Assets\Plugins\DevConsole\Scripts\Logger.cs
-Assets\Plugins\DevConsole\Scripts\OpenButton.cs
-Assets\Plugins\DevConsole\Scripts\ScrollBar.cs
-Assets\Plugins\DevConsole\Scripts\ScrollView.cs
-Assets\Plugins\DevConsole\Scripts\Settings.cs
-Assets\Plugins\DevConsole\Scripts\SettingsPanel.cs
-Assets\Plugins\DevConsole\Scripts\Slider.cs
-Assets\Plugins\DevConsole\Scripts\Tab.cs
-Assets\Plugins\DevConsole\Scripts\Toggle.cs
-Assets\Plugins\DevConsole\Scripts\Toolbar.cs
-Assets\Plugins\DevConsole\Scripts\Window.cs
-Assets\Plugins\DevConsole\Tutorial\Scripts\CameraMovement.cs
-Assets\Plugins\DevConsole\Tutorial\Scripts\PlayerMovement.cs
-Assets\Plugins\DevConsole\Tutorial\Scripts\RoomLight.cs
-Assets\Plugins\DevConsole\Tutorial\Scripts\Rooms\Room.cs
-Assets\Plugins\DevConsole\Tutorial\Scripts\Rooms\Room1.cs
-Assets\Plugins\DevConsole\Tutorial\Scripts\Rooms\Room10.cs
-Assets\Plugins\DevConsole\Tutorial\Scripts\Rooms\Room11.cs
-Assets\Plugins\DevConsole\Tutorial\Scripts\Rooms\Room12.cs
-Assets\Plugins\DevConsole\Tutorial\Scripts\Rooms\Room2.cs
-Assets\Plugins\DevConsole\Tutorial\Scripts\Rooms\Room3.cs
-Assets\Plugins\DevConsole\Tutorial\Scripts\Rooms\Room4.cs
-Assets\Plugins\DevConsole\Tutorial\Scripts\Rooms\Room5.cs
-Assets\Plugins\DevConsole\Tutorial\Scripts\Rooms\Room6.cs
-Assets\Plugins\DevConsole\Tutorial\Scripts\Rooms\Room7.cs
-Assets\Plugins\DevConsole\Tutorial\Scripts\Rooms\Room8.cs
-Assets\Plugins\DevConsole\Tutorial\Scripts\Rooms\Room9.cs
+Assets\Scripts\Enemy\EnemyController.cs
+"Assets\Scripts\menu's\Level_Loader.cs"
+"Assets\Scripts\menu's\Main_Menu.cs"
+"Assets\Scripts\menu's\Pause_Menu.cs"
+"Assets\Scripts\menu's\Settings_Menu.cs"
+Assets\Scripts\objects\KillMe.cs
+Assets\Scripts\Player\Player.cs
+Assets\Scripts\Player\PlayerController.cs
+Assets\Scripts\Player\Score.cs
+Assets\Scripts\Player\Shooting.cs
+Assets\Scripts\Player\SpecialAttack.cs
+"Assets\TextMesh Pro\Examples & Extras\Scripts\Benchmark01.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\Benchmark01_UGUI.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\Benchmark02.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\Benchmark03.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\Benchmark04.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\CameraController.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\ChatController.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\EnvMapAnimator.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\ObjectSpin.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\ShaderPropAnimator.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\SimpleScript.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\SkewTextExample.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\TeleType.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\TextConsoleSimulator.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\TextMeshProFloatingText.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\TextMeshSpawner.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\TMP_DigitValidator.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\TMP_ExampleScript_01.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\TMP_FrameRateCounter.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\TMP_PhoneNumberValidator.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\TMP_TextEventCheck.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\TMP_TextEventHandler.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\TMP_TextInfoDebugTool.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\TMP_TextSelector_A.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\TMP_TextSelector_B.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\TMP_UiFrameRateCounter.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\TMPro_InstructionOverlay.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\VertexColorCycler.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\VertexJitter.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\VertexShakeA.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\VertexShakeB.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\VertexZoom.cs"
+"Assets\TextMesh Pro\Examples & Extras\Scripts\WarpTextExample.cs"

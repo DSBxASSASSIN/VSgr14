@@ -6,13 +6,6 @@
 /nostdlib+
 /preferreduilang:en-US
 /langversion:latest
-/reference:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
-/reference:Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-/reference:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-/reference:Library/ScriptAssemblies/Unity.Timeline.dll
-/reference:Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-/reference:Library/ScriptAssemblies/Unity.TextMeshPro.dll
-/reference:Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -73,13 +66,18 @@
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/Managed/UnityEditor.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/Managed/Unity.Locator.dll"
+/reference:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+/reference:Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.Timeline.dll
+/reference:Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.TextMeshPro.dll
+/reference:Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
 /reference:Assets/Plugins/DevConsole/CommandSystem/CommandSystem.dll
-/reference:"D:/unity/VSgr14/Rayman 3D/Library/PackageCache/com.unity.ads@2.0.8/UnityEngine.Advertisements.dll"
 /reference:"D:/unity/VSgr14/Rayman 3D/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll"
 /reference:"D:/unity/VSgr14/Rayman 3D/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll"
 /reference:"D:/unity/VSgr14/Rayman 3D/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll"
-/reference:"D:/unity/VSgr14/Rayman 3D/Library/PackageCache/com.unity.purchasing@2.0.6/UnityEngine.Purchasing.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll"
@@ -298,14 +296,17 @@
 /define:ENABLE_VSTU
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
-Assets\KillMe.cs
-Assets\Scripts\EnemyController.cs
-Assets\Scripts\Level_Loader.cs
-Assets\Scripts\Main_Menu.cs
-Assets\Scripts\Pause_Menu.cs
-Assets\Scripts\Player_Controller.cs
-Assets\Scripts\Settings_Menu.cs
-Assets\Scripts\Shooting.cs
+Assets\Scripts\Enemy\EnemyController.cs
+"Assets\Scripts\menu's\Level_Loader.cs"
+"Assets\Scripts\menu's\Main_Menu.cs"
+"Assets\Scripts\menu's\Pause_Menu.cs"
+"Assets\Scripts\menu's\Settings_Menu.cs"
+Assets\Scripts\objects\KillMe.cs
+Assets\Scripts\Player\Player.cs
+Assets\Scripts\Player\Player_Controller.cs
+Assets\Scripts\Player\Score.cs
+Assets\Scripts\Player\Shooting.cs
+Assets\Scripts\Player\SpecialAttack.cs
 "Assets\TextMesh Pro\Examples & Extras\Scripts\Benchmark01.cs"
 "Assets\TextMesh Pro\Examples & Extras\Scripts\Benchmark01_UGUI.cs"
 "Assets\TextMesh Pro\Examples & Extras\Scripts\Benchmark02.cs"
