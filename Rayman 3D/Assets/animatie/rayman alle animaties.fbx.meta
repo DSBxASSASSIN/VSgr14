@@ -6,12 +6,7 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: Take 001
-  externalObjects:
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: uv snap rayman tex 4
-    second: {fileID: 2800000, guid: 8632c38ba6202694aa6ebb38da957fd5, type: 3}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0

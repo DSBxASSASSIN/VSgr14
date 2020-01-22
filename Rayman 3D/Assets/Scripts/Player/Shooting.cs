@@ -20,10 +20,8 @@ public class Shooting : MonoBehaviour
             _chargeShotTimer += Time.deltaTime;
         }
 
-        if(Input.GetKeyUp(chargeShot) && Time.time >= _nextTimeToFire){
-            Shoot();
-        }else if(Input.GetKeyUp(chargeShot) && _chargeShotTimer > 2  && Time.time >= _nextTimeToFire){
-            Shoot();
+        if(Input.GetKeyUp(chargeShot)){
+            
         }
 
     }
