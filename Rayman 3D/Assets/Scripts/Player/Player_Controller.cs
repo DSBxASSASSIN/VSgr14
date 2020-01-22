@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class Player_Controller : MonoBehaviour
 {    
     private Rigidbody rb;
     private float disToGround = 1.5f;
