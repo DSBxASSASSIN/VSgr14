@@ -436,7 +436,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: e4b3ffff16e2ffff7afbffffaa2f0000
+      m_ExpandedIDs: 36faffffe22f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -496,9 +496,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.16317533, y: 7.012393, z: -9.75}
+    m_Target: {x: 4.298744, y: 8.030829, z: -18.11198}
     speed: 2
-    m_Value: {x: -0.1631751, y: 7.012393, z: -9.75}
+    m_Value: {x: 4.298744, y: 8.030829, z: -18.11198}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -527,13 +527,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.044155426, y: 0.95167065, z: -0.25571525, w: -0.16436075}
+    m_Target: {x: -0.0084033515, y: -0.9682534, z: 0.24775068, w: -0.032824975}
     speed: 2
-    m_Value: {x: -0.044401202, y: 0.95127106, z: -0.25713843, w: -0.16429175}
+    m_Value: {x: -0.008774779, y: -0.9681822, z: 0.24773246, w: -0.034276575}
   m_Size:
-    m_Target: 12.691933
+    m_Target: 30.453268
     speed: 2
-    m_Value: 12.1453905
+    m_Value: 29.141884
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -686,20 +686,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Environment textures/new tex
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets
+  - Assets/Environment textures/new tex
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\thijs\Documents\GitHub\VSgr14\Rayman 3D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 31}
-    m_SelectedIDs: d2290000
-    m_LastClickedID: 10706
-    m_ExpandedIDs: 00000000d22900006e2b0000c42b0000662c0000b42c000000ca9a3b
+    m_SelectedIDs: 882d0000
+    m_LastClickedID: 11656
+    m_ExpandedIDs: 00000000722a0000322c0000a82c0000422d0000282e0000a22e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -727,7 +727,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d22900006e2b0000662c0000b42c0000
+    m_ExpandedIDs: 00000000722a0000a82c0000282e0000a22e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -779,7 +779,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 342.5}
     m_GridSize: 16
   m_DirectoriesAreaWidth: 218
 --- !u!114 &20
