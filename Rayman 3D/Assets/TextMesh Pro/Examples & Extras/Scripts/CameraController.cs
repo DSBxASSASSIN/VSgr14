@@ -14,7 +14,7 @@ namespace TMPro.Examples
 
         public Transform CameraTarget;
 
-        public float FollowDistance = 30.0f;
+        public float FollowDistance = 10.0f;
         public float MaxFollowDistance = 100.0f;
         public float MinFollowDistance = 2.0f;
 

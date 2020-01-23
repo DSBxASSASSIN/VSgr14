@@ -12,7 +12,7 @@ public class Player_Controller : MonoBehaviour
     private float _speed = 8;
     private float _health;
     private int _maxJumps = 2;
-    private float _jumpforce = 8f;
+    private float _jumpforce = 6f;
     
  
 

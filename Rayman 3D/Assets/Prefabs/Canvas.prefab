@@ -793,7 +793,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 763861522641312006}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96fac7e7341e67640bb5ccdff6500d4b, type: 3}
+  m_Script: {fileID: 11500000, guid: 434a4beaa32314440a162e19e7338bb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fairyScoreText: {fileID: 763861522641312004}
